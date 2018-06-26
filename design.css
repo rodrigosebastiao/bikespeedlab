@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#top{
+	height: 100px;
+	padding: 10px;
+	background-color:#000000;
+	text-align: left bottom;
+	box-shadow: 20px;
+	border-bottom-style: inset;
+	border-bottom-width: 3px;
+	border-bottom-color: #FF6C00;
+}
+
+#top img{
+	height: 50px;
+	width: 50px;
+}
+
+#logo {
+	margin-left: 30px;
+	font-size: 15px;
+}
+
+#logo a:hover, a:active,a:link, a:visited {
+	text-decoration: none;
+	color:#00BB99;
+}
+
+#container{
+	display:block;
+}
+
+#info {
+	position:relative;
+	margin: 10px 20px;
+	width: 450px;
+	left: 0;
+	background: rgba(50,220,255,1);
+}
+
+#menu {
+	float: right;
+	color:rgba(0,0,0,0.2);
+	background-color:rgba(0,150,110,0.7);
+	width: 25%;
+	margin: 0 20px 0 0;
+	
+	box-shadow: 2px 2px 2px 2px;
+}
+
+#menu li{
+	color:rgba(0,0,0,1);
+	display:inline;
+}
+
+button.controllers{/*START & STOP*/
+	background: rgba(50,200,250,1);
+	color:rgba(250,250,250,1);
+	border-style:none;
+	padding: 6px;
+	position:relative;
+	left:2%;
+	font-size:16px;
+}
+
+#BikeCyclist, #chainRingGroup, #cogGroup, #results{
+	background-color:rgba(0,0,0,.1);
+}
+
+#cog6,#cog11{
+	margin-left:74px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {/*Buttons*/
+	opacity: 1;
+	padding: 9px 4px;
+	position: relative;
+  	left: 5px;
+}
+
+input[type=number]{/*BOX*/
+	background-color:rgba(0,0,0,0.5);
+	color:rgba(255,255,255,0.8);
+	border-style:none;
+ 	padding: 4px;
+	width: 50px;
+	height: 20px;
+	font-size:16px;
+}
+
+
+#footer{
+	background: rgba(20,20,20,1);
+	height: 100px;
+	width: 100%;
+	top: 90%;
+}
+
+#footer p{
+	color:rgba(200,150,0,1);
+	padding: 2% 0 0 20px;
+	font-size:12;
+}
