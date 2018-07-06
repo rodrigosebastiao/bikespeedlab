@@ -1,54 +1,84 @@
+
+.color1{ color: #C3CFC6 ;}
+.color2{ color: #586D6E ;}
+.color3{ color: #FF9000 ;}
+.color4{ color: #00878D ;}
+.color5{ color: #CED73E ;}
+
+.color1RGB{ color: rgb(195, 207, 198) ;}
+.color2RGB{ color: rgb(88, 109, 110) ;}
+.color3RGB{ color: rgb(255, 144, 0) ;}
+.color4RGB{ color: rgb(0, 135, 141) ;}
+.color5RGB{ color: rgb(206, 215, 62);}
+
 body{
 	margin: 0;
-	font-family: sans-serif;
+	font-family: "Open Sans";
 }
 
-#top{
-	height: 100px;
+.top{
+	height: 120px;
 	padding: 10px;
-	background-color:#000000;
+	background-color:#364B4C;
 	text-align: left bottom;
 	box-shadow: 20px;
 	border-bottom-style: inset;
 	border-bottom-width: 3px;
-	border-bottom-color: #FF6C00;
+	border-bottom-color: #FF9000;
 }
 
-#top img{
-	height: 50px;
-	width: 50px;
-}
 
-#logo {
+.logo {
 	margin-left: 30px;
-	font-size: 15px;
+	font-size: 10px;
+	font-family: "Overlock";
 }
 
-#logo a:hover, a:active,a:link, a:visited {
+.logo a:hover, a:active,a:link, a:visited {
 	text-decoration: none;
 	color:#00BB99;
 }
 
-#container{
-	display:block;
+.logo a img{
+	width: 30px;
+	height: auto;
+}
+
+.container {
+	width: 1400px;
+	margin: 0 50px;
 }
 
 #info {
 	position:relative;
-	margin: 10px 20px;
-	width: 450px;
+	margin: 10px 0px;
+	width: 480px;
 	left: 0;
-	background: rgba(50,220,255,1);
+	background-color:#C3CFC6;
+	font-family: "Overlock";
 }
 
 #menu {
 	float: right;
 	color:rgba(0,0,0,0.2);
-	background-color:rgba(0,150,110,0.7);
-	width: 25%;
-	margin: 0 20px 0 0;
-	
+	background: rgb(91, 216, 241);
+	width: 26%;
+	margin: 0 5px 0 0;
 	box-shadow: 2px 2px 2px 2px;
+	font-size: 14px;
+	font-family: "Cantata One";
+}
+
+#menu h1{
+	color:#000;
+	font-size:23;padding:10px;
+	text-indent:80;
+	font-family: "Merienda";
+}
+
+#menu ul{
+	padding: 0;
+	margin: 10px;
 }
 
 #menu li{
@@ -57,8 +87,8 @@ body{
 }
 
 button.controllers{/*START & STOP*/
-	background: rgba(50,200,250,1);
-	color:rgba(250,250,250,1);
+	background: #FFF;
+	color:#DD6000;
 	border-style:none;
 	padding: 6px;
 	position:relative;
@@ -74,25 +104,33 @@ button.controllers{/*START & STOP*/
 	margin-left:74px;
 }
 
+#leftShifter,
+#rightShifter{
+	color: #FF9000;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {/*Buttons*/
 	opacity: 1;
-	padding: 9px 4px;
+	padding: 15px 4px;
 	position: relative;
   	left: 5px;
+	
 }
 
 input[type=number]{/*BOX*/
 	background-color:rgba(0,0,0,0.5);
 	color:rgba(255,255,255,0.8);
 	border-style:none;
- 	padding: 4px;
-	width: 50px;
+ 	padding: 5px;
+	width: 40px;
 	height: 20px;
-	font-size:16px;
+	font-size:14px;
 }
 
+#tiresCirc input[type=number]{
+	width: 50px;
+}
 
 #footer{
 	background: rgba(20,20,20,1);
@@ -105,4 +143,5 @@ input[type=number]{/*BOX*/
 	color:rgba(200,150,0,1);
 	padding: 2% 0 0 20px;
 	font-size:12;
+
 }

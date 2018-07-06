@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43685815-5"></script>
@@ -11,34 +11,35 @@
 	gtag('config', 'UA-43685815-5');
 </script>
 <meta charset="utf-8" >
-<meta http-equiv="refresh" content="" URL="http://" >
-<link href="design.css" rel="stylesheet" type="text/css" >
-<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" >
-
+<link href="design.css" rel="stylesheet" type="text/css"/>
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=Cantata+One%7cMerienda%7cOpen+Sans%7cOverlock" rel="stylesheet"/>
 <title>Bike Speed Lab</title>
 </head>
 
 <body>
-<div id="movBack"></div>
-	<!--Top Division-->
-<div id="top">
-	<div id="logo">
-		<a href="www.bikespeedlab.tk">BIKE<br>SPEED<br><img src="images\logo.png" width="200" alt="logo"></a>
+<!--Top Division-->
+<div class="top">
+	<div class="top-wrap">
+		<div class="logo">
+			<a href="www.bikespeedlab.tk"><p>BIKE<br>SPEED</p><img src="images/logo.png" width="200" alt="logo"></a>
+		</div>
 	</div>
 </div>
 
 
-<div id="container"><!--Whole Page Container-->
+<div class="container"><!--Whole Page Container-->
 
-		<!--Info-->
+	<!--Info-->
 <div id="info">Check bike speed if you change tires, cogs, crankset, bike's weight, cyclist's weight, wind resistence, power spent and so on.</div>
 
 	<!--CANVAS-->
+
 <canvas id="canvas" width="1000" height="650"></canvas>
 
 	<!--MENU-->
 <div id="menu">
-		<h1 style=color:#000;font-size:23;padding:10px;text-indent:80;>
+		<h1>
 	BIKE SETTINGS:</h1><!--Header-->
 
 	<div>
@@ -48,27 +49,27 @@
 <div id="chainRingGroup"><!--Gearing and chains-->
 	<ul>
 	<li><b>Front Gear Position:</b>
-<input id="leftShifter" name="" type="number" value="3" min="1" max="3"></li><br>
-	<li>Crankset Teeth: <input id = "chanring1" name="" type="number" class="chainring" value="20" min="15" max="30"></li>
-	<li><input id="chanring2" name="" type="number" class="chainring" value="30" min="20" max="40"></li>
-	<li><input id="chanring3" name="" type="number" class="chainring" value="40" min="30" max="55"></li>
+<input id="leftShifter" type="number" value="3" min="1" max="3"></li> 
+	<li>Crankset Teeth: <input id = "chanring1" type="number" class="chainring" value="20" min="15" max="30"></li>
+	<li><input id="chanring2" type="number" class="chainring" value="30" min="20" max="40"></li>
+	<li><input id="chanring3" type="number" class="chainring" value="40" min="30" max="55"></li>
 	</ul>
 </div><!--End Gearing and chians-->
 
 <div id="cogGroup"><!--COGS-->
 	<ul>
-		<li><b>Rear Gear Position: </b><input id="rightShifter" name="" type="number" value="1" min="1" max="11"></li><br>
-	<li>Cog Teeth:<input id = "cog1" name="" type="number" class="cog" value="11" min="9" max="13"></li>
-	<li><input id = "cog2" name="" type="number" class="cog" value="12" min="10" max="14"></li>
-	<li><input id = "cog3" name="" type="number" class="cog" value="13" min="11" max="15"></li>
-	<li><input id = "cog4" name="" type="number" class="cog" value="15" min="15" max="17"></li>
-	<li><input id = "cog5" name="" type="number" class="cog" value="18" min="18" max="21"></li><br>
-	<li><input id = "cog6" name="" type="number" class="cog" value="22" min="21" max="23"></li>
-	<li><input id = "cog7" name="" type="number" class="cog" value="24" min="23" max="25"></li>
-	<li><input id = "cog8" name="" type="number" class="cog" value="26" min="25" max="27"></li>
-	<li><input id = "cog9" name="" type="number" class="cog" value="28" min="27" max="31"></li>
-	<li><input id = "cog10" name="" type="number" class="cog" value="32" min="31" max="33"></li><br>
-	<li><input id = "cog11" name="" type="number" class="cog" value="34" min="33" max="36"></li>
+		<li><b>Rear Gear Position: </b><input id="rightShifter" type="number" value="1" min="1" max="11"></li> 
+	<li>Cog Teeth:<input id = "cog1" type="number" class="cog" value="11" min="9" max="13"></li>
+	<li><input id = "cog2" type="number" class="cog" value="12" min="10" max="14"></li>
+	<li><input id = "cog3" type="number" class="cog" value="13" min="11" max="15"></li>
+	<li><input id = "cog4" type="number" class="cog" value="15" min="15" max="17"></li>
+	<li><input id = "cog5" type="number" class="cog" value="18" min="18" max="21"></li> 
+	<li><input id = "cog6" type="number" class="cog" value="22" min="21" max="23"></li>
+	<li><input id = "cog7" type="number" class="cog" value="24" min="23" max="25"></li>
+	<li><input id = "cog8" type="number" class="cog" value="26" min="25" max="27"></li>
+	<li><input id = "cog9" type="number" class="cog" value="28" min="27" max="31"></li>
+	<li><input id = "cog10" type="number" class="cog" value="32" min="31" max="33"></li> 
+	<li><input id = "cog11" type="number" class="cog" value="34" min="33" max="36"></li>
 		</ul>
 
 	</div><!--End COGS-->
@@ -76,55 +77,43 @@
 <div id="BikeCyclist"><!--Bike Measures-->
 <ul>
 				<li><b>Pedal:
-<input id = "pedalRevolutions" name="" type="number" value="40" min="0" max="200">RPM/Cadence</b></li><br>
+<input id = "pedalRevolutions" type="number" value="40" min="0" max="200">RPM/Cadence</b></li> 
 				<li><b>Tires Circumference:</b>
-<input id = "tiresCirc" name="" type="number" step="5" value="2125" min="1800" max="2780">mm</li><br><!--Circunference in mm-->
+<input id = "tiresCirc" type="number" step="5" value="2125" min="1800" max="2780">mm</li> <!--Circunference in mm-->
 <li><b>Crank Length:</b>
-<input id = "crankLength" name="" type="number" value="175" min="145" step="5" max="190">mm</li><br>
+<input id = "crankLength" type="number" value="175" min="145" step="5" max="190">mm</li> 
 <li><b>Cyclist Weight:</b>
-<input id = "riderKG" name="" type="number" value="70" min="20" max="250">KG</li><br>
-<li style=text-indent:90px;>  <b>Bike Weight:</b>
-<input id = "bikeKG" name="" type="number" value="14" min="5" max="30">KG</li><br><br>
+<input id = "riderKG" type="number" value="70" min="20" max="250">KG</li> 
+<li style=text-indent:90px;> <b>Bike Weight:</b>
+<input id = "bikeKG" type="number" value="14" min="5" max="30">KG</li>  
 	</ul></div><!--Bike Measures-->
 
 
 <!--Pulleys DISABLED-->
-	<div style="display:none"; id="rearDerailleur">
-	&nbsp Rear Derailleur Pulleys
-	<input id = "guidePulley" type="number" class="pulley" value="11" min="8" max="13">
-	<input id = "idlerPulley" type="number" class="pulley" value="11" min="8" max="13">
-	</div><!--End Pulleys-->
+<div style="display: none" id="rearDerailleur">
+&nbsp; Rear Derailleur Pulleys
+<input id = "guidePulley" type="number" class="pulley" value="11" min="8" max="13">
+<input id = "idlerPulley" type="number" class="pulley" value="11" min="8" max="13">
+</div><!--End Pulleys-->
 
 <!--PRINTERS-->
-		<div id="results">
-		<ul>
-		<li><h4 id="tester"></h4></li>
-		<li><h4 id="tester1"></h4></li>
-		<li><h4 id="tester2"></h4></li>
-		<li><h4 style=color:#DA0 id="KMH"></h4></li>
-		<li><h4 id="show"></h4></li>
-		<li><h4 id="show1"></h4></li>
-		<li><h4 id="show2"></h4></li>
-		<li><h4 id="demo"></h4></li>
-		<li><h4 id="demo1"></h4></li>
-		<li><h4 id="demo2"></h4></li>
-		<li><h4 id="status"></h4></li>
-		<li><h4 id="showError"></h4></li>
-		</ul>
-		</div>
+<div id="results">
+	<ul>	
+		<li><h4 id="test"> </h4></li>
+		<li><h4 id="test1"> </h4></li>
+		<li><h4 id="KMH"> </h4></li>
+		<li><h4 id="show"> </h4></li>
+		<li><h4 id="show1"> </h4></li>
+		<li><h4 id="show2"> </h4></li>
+		<li><h4 id="demo"> </h4></li>
+		<li><h4 id="demo1"> </h4></li>
+		<li><h4 id="demo2"> </h4></li>
+		<li><h4 id="status"> </h4></li>
+		<li><h4 id="showError"> </h4></li>
+	</ul>		
+</div>
 
 </div><!--End Menu-->
-
-
-<!--Bike build <div class="thebike"> 
-<img id="bike_frame" src="images\frame.png" alt="bike frame"><br>
-<img id="bike_tireb" src="images\tireb.png" alt="bike back tire"><br>
-<img id="bike_cogs"  src="images\cogs.png" alt="bike cogs"><br>
-<img id="bike_crank" src="images\crank.png" alt="bike crank"><br>
-<img id="bike_pedal" src="images\pedal.png" alt="bike pedal"><br>
-<img id="bike_tiref" src="images\tiref.png" alt="bike front tire"><br>
-</div>-->
-
 
 </div><!-- closing page container-->
 
